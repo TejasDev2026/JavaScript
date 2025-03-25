@@ -16,3 +16,10 @@ console.table([typeof AccountHoldersName,AccountHoldersName]);
 
 let isUserLoggedIn=Boolean(bodyInput);
 console.table([typeof isUserLoggedIn,isUserLoggedIn]);
+
+// lets do some about the strings concatination :
+ let str1="Tejas"
+ let str2="Devloper"
+ console.log(`${str1}  ${str2}`);
+ console.log("2"+5);
+ console.log(5+"45");
