@@ -52,3 +52,22 @@ let printSum= function ()
     return sum;
 }
 console.log(typeof printSum, printSum());
+
+// heap and stack allocation in javascript: primitive  datatypes uses stack allocation while non premitive datatypes like function and ibject uses an heap allocation lets explore it one by one
+
+let accoutHoldersAdderss="Eden garden Society tathawade";
+let primaryAddress=accoutHoldersAdderss;
+primaryAddress="Vrindavan nivas kolgaon Ahilyanagar";
+console.table([accoutHoldersAdderss , primaryAddress]);
+//it uses a stack allocation 
+
+let employeeData={
+    name: "Tejas",
+    department: "Computer",
+    position: "Asst. prof",
+    salary: 500000
+}
+console.table([employeeData.name,typeof employeeData])
+let ComputerEmployeeData=employeeData;
+ComputerEmployeeData.salary=10000000;
+console.table([employeeData.salary,ComputerEmployeeData.salary])
